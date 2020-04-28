@@ -12,13 +12,27 @@
 export default {
 	data() {
 		return {
+			data: this.HOME,
 			images: [
 				"https://wx-edu.oss-cn-hangzhou.aliyuncs.com/picture/teacher1.png",
 				"https://wx-edu.oss-cn-hangzhou.aliyuncs.com/picture/teacher2.png"
 			]
 		};
+	},
+
+	methods: {
+		getDiscoverCourseList() {
+			console.log("zhixingle")
+		}
+	},
+
+	mounted() {
+		this.getDiscoverCourseList()
+		
 	}
-};
+
+	
+}
 </script>
 
 <style>

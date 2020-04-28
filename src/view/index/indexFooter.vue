@@ -1,6 +1,6 @@
 <template>
 	<div class="van-tabbar">
-		<van-tabbar v-model="active" active-color="#1989fa" border="true" router>
+		<van-tabbar v-model="active" active-color="#1989fa"  router>
 			<van-tabbar-item to="discover">
 				<van-icon class="iconfont icon-faxian" class-prefix="icon" slot="icon" size="23"></van-icon>
 				<span>发现</span>
