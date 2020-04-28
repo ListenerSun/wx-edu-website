@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <indexHeader />
-    <indexMain/>
+    <router-view>
+    </router-view>
     <indexFooter />
   </div>
 </template>
@@ -10,18 +10,20 @@
 <script>
 import indexHeader from "@/view/index/indexHeader";
 import indexFooter from "@/view/index/indexFooter";
-import indexMain from '@/view/index/indexMain'
+import teacherCardList from '@/view/discover/teacherCardList'
+
+
 export default {
   name: "App",
   components: {
     indexHeader,
     indexFooter,
-    indexMain
+    teacherCardList
   }
 };
 </script>
 
 <style >
-  @import "./assets/icon/iconfont.css";
+@import "./assets/icon/iconfont.css";
 </style>
 

@@ -1,23 +1,35 @@
 <template>
-  <div class="main1">
-      this is main
-  </div>
+<div>
+    <div class= "one"></div>
+    <div class= "two"></div>
+</div>
 </template>
 
 <script>
-
 export default {
-
-}
+	data() {
+		return {};
+	},
+	components: {}
+};
 </script>
 
 <style>
+ div {
+        height: auto;
+        margin: 0 auto;
+        width: auto;
+    }
 
-    .main1 {
-        height: 60%;
-        background-color:lightseagreen;
-        line-height: 600px;
-        text-align: center;
+    .one {
+        height: 100px;
+        width: 100px;
+        background-color: lightskyblue;
+    }
+    .two {
+        height: 100px;
+        width: 100px;
+        background-color:lightpink;
     }
 
 </style>
