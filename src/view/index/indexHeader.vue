@@ -8,10 +8,10 @@ export default {};
 
 <style>
 .header {
-	height: 30px;
+	height: 50px;
 	width: 100%;
 	background-color: lightcyan;
-	line-height: 30px;
+	line-height: 50px;
 	text-align: center;
 }
 </style>

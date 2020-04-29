@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <indexHeader/>
     <router-view>
     </router-view>
     <indexFooter />

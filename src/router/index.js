@@ -4,6 +4,7 @@ import Router from 'vue-router'
 
 import teacherCardList from '@/view/discover/teacherCardList'
 import indexMain from '@/view/index/indexMain'
+import courseInfo from '@/view/course/courseInfo'
 
 const routerPush = Router.prototype.push
 Router.prototype.push = function push (location) {
@@ -17,6 +18,11 @@ export default new Router({
       path: '/discover',
       name: 'discover',
       component: teacherCardList
+    },
+    {
+      path: '/course_info',
+      name: 'course_info',
+      component: courseInfo
     },
     {
       path: '/main',

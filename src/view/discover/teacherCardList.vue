@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<van-swipe :autoplay="3000">
-			<van-swipe-item v-for="(image, index) in images" :key="index">
-				<img class="img" :src="image" />
+		<van-swipe :autoplay="3000" >
+			<van-swipe-item v-for="(discoverCourse, index) in DiscoverCourseList" :key="index"  @click="onChange(discoverCourse.id)">
+				<img class="img" :src="discoverCourse.courseLogo" />
 			</van-swipe-item>
 		</van-swipe>
 	</div>
@@ -13,22 +13,35 @@ export default {
 	data() {
 		return {
 			data: this.HOME,
-			images: [
-				"https://wx-edu.oss-cn-hangzhou.aliyuncs.com/picture/teacher1.png",
-				"https://wx-edu.oss-cn-hangzhou.aliyuncs.com/picture/teacher2.png"
+			DiscoverCourseList: [
+				// {id:1, "courseLogo":"wx-edu.oss-cn-hangzhou.aliyuncs.com/picture/teacher2.png"}
 			]
+				
 		};
 	},
 
 	methods: {
+		// 获取推荐课程列表
 		getDiscoverCourseList() {
-			console.log("zhixingle")
+			let url = this.HOME + "/course/edu/course/discover"
+			this.HTTP.get(url,null).then(res => {
+				if (res.success) {
+					this.DiscoverCourseList = res.data
+					this.DiscoverCourseList.forEach(e => {
+						e.courseLogo = "https://" + e.courseLogo
+					})
+				}
+			})
+		},
+		// 点击推荐课程事件
+		onChange(id) {
+			console.log("点击了")
+			console.log(id)
 		}
 	},
 
 	mounted() {
 		this.getDiscoverCourseList()
-		
 	}
 
 	
@@ -37,8 +50,8 @@ export default {
 
 <style>
 .img {
-	width: 85%;
-	margin-left: 34px;
-	margin-top: 85px;
+	width: 80%;
+	margin-left: 40px;
+	margin-top: 30px;
 }
 </style>
