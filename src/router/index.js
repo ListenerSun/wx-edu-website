@@ -5,6 +5,7 @@ import Router from 'vue-router'
 import teacherCardList from '@/view/discover/teacherCardList'
 import indexMain from '@/view/index/indexMain'
 import courseInfo from '@/view/course/courseInfo'
+import admin from '@/view/admin/admin'
 
 const routerPush = Router.prototype.push
 Router.prototype.push = function push (location) {
@@ -14,6 +15,18 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/admin',
+      name: 'admin',
+      component: admin,
+      children: [
+        {
+          path: '/admin/user',
+          name: 'user',
+          component: admin
+        }
+      ]
+    },
     {
       path: '/discover',
       name: 'discover',

@@ -12,8 +12,8 @@
 			<van-tabbar-item to="main">
 				<van-icon class="iconfont icon-icon_tuijiannor" class-prefix="icon" slot="icon" size="27"></van-icon>
 				<span style="margin:0 0 0 2px">推荐</span>
-			</van-tabbar-item>
-			<van-tabbar-item>
+			</van-tabbar-item >
+			<van-tabbar-item to="/admin">
 				<van-icon class="iconfont icon-wo1" class-prefix="icon" slot="icon" size="25"></van-icon>
 				<span style="margin:0 0 0 2px">我的</span>
 			</van-tabbar-item>

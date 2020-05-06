@@ -1,5 +1,8 @@
 <template>
 
+    <div>
+        this  is courseInfo
+    </div>
 </template>
 
 <script>

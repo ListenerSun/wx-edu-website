@@ -12,6 +12,7 @@ import { Tabbar, TabbarItem } from 'vant';
 // 引入 axios 组件
 import axios from 'axios'
 import * as HttpUtils from './utils/HttpUtils'
+import iconfont from '@/assets/icon/iconfont'
 
 // 定义 vant 相关
 Vue.use(Tabbar);

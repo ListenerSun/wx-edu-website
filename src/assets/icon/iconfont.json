@@ -69,6 +69,20 @@
       "unicode_decimal": 58897
     },
     {
+      "icon_id": "7503105",
+      "name": "用户",
+      "font_class": "yonghu-1",
+      "unicode": "e507",
+      "unicode_decimal": 58631
+    },
+    {
+      "icon_id": "8350437",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e530",
+      "unicode_decimal": 58672
+    },
+    {
       "icon_id": "8781546",
       "name": "教育",
       "font_class": "dibudaohanglan-",
@@ -109,6 +123,13 @@
       "font_class": "peizhitubiaosvg-",
       "unicode": "e66a",
       "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "14166215",
+      "name": "用户",
+      "font_class": "yonghu1",
+      "unicode": "e50c",
+      "unicode_decimal": 58636
     }
   ]
 }
