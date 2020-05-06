@@ -5,7 +5,7 @@
 				<van-icon class="iconfont icon-faxian" class-prefix="icon" slot="icon" size="23"></van-icon>
 				<span>发现</span>
 			</van-tabbar-item>
-			<van-tabbar-item to="/">
+			<van-tabbar-item to="/teacher">
 				<span style="margin:50px 0 0 2px">贴心老师</span>
 				<van-icon class="iconfont icon-dibudaohanglan-" class-prefix="icon" slot="icon" size="26"></van-icon>
 			</van-tabbar-item>
