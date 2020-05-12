@@ -8,6 +8,8 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 import { Lazyload } from 'vant';
 import { Tabbar, TabbarItem } from 'vant';
+import { Card } from "vant";
+
 
 // 引入 axios 组件
 import axios from 'axios'
@@ -15,6 +17,7 @@ import * as HttpUtils from './utils/HttpUtils'
 import iconfont from '@/assets/icon/iconfont'
 
 // 定义 vant 相关
+Vue.use(Card)
 Vue.use(Tabbar);
 Vue.use(TabbarItem);
 Vue.use(Vant);
@@ -26,7 +29,7 @@ Vue.prototype.HTTP = HttpUtils
 //全局注册，使用方法为:this.$axios
 Vue.prototype.$axios = axios
 // 后端请求地址
-Vue.prototype.HOME = 'http://localhost:9300'
+Vue.prototype.HOME = 'http://localhost:9000'
 
 /* eslint-disable no-new */
 new Vue({
