@@ -29,7 +29,7 @@ Vue.prototype.HTTP = HttpUtils
 //全局注册，使用方法为:this.$axios
 Vue.prototype.$axios = axios
 // 后端请求地址
-Vue.prototype.HOME = 'http://localhost:9000'
+Vue.prototype.HOME = 'http://localhost:8888/edu'
 
 /* eslint-disable no-new */
 new Vue({

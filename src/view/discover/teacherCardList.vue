@@ -23,7 +23,7 @@ export default {
 	methods: {
 		// 获取推荐课程列表
 		getDiscoverCourseList() {
-			let url = this.HOME + "/course/edu/course/discover"
+			let url = this.HOME + "/course/discover"
 			this.HTTP.get(url,null).then(res => {
 				if (res.success) {
 					this.DiscoverCourseList = res.data
